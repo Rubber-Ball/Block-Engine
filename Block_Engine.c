@@ -1,20 +1,21 @@
 #include "view/window.h"
 #include "inputs/key_inputs.h"
+#include "view/text.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
-#include "view/text.h"
+
 // Dependencies: libx11-dev (or libX11-devel / libx11) THIS CODE IS FOR LINUX ONLY
 
 
 void render_ui(Display *display, Window win, GC gc) {
 
-    draw_text(display, win, gc, 25, 15, "Welcome to Block Engine!", 0xFFFFFF);
+    draw_text(display, win, gc, 25, 15, "Welcome to Block Engine!", 0xFFFFFF,10);
 
-    draw_text(display, win, gc, 25, 45, "Press E to exit, W to change color", 0x000099);
+    draw_text(display, win, gc, 25, 45, "Press E to exit, W to change color", 0x000099,20);
 }
 
 

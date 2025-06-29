@@ -1,13 +1,27 @@
 #include <X11/Xlib.h>
-#include <X11/keysym.h>
-#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 
-int Key_Inputs(XKeyEvent *xkey, const char *key_str) {
-    KeySym key = XLookupKeysym(xkey, 0);
-    if (key == XStringToKeysym(key_str)) {
-        printf("\033[1;34m%s\n\033[0m", key_str);
-        return 1;
+
+
+
+void draw_text(Display *display, Window window, GC gc, int x, int y, char *text, long color, int size) {
+    // Set color
+    XSetForeground(display, gc, color);
+
+    // Build font string dynamically (roughly)
+    char fontname[128];
+    snprintf(fontname, sizeof(fontname), "-misc-fixed-*-*-*-*-%d-*-*-*-*-*-*-*", size);
+
+    XFontStruct *font = XLoadQueryFont(display, fontname);
+    if (font) {
+        XSetFont(display, gc, font->fid);
+    } else {
+        printf("Warning: Failed to load font size %d. Using default.\n", size);
     }
-    return 0;
+
+    // Draw string
+    XDrawString(display, window, gc, x, y, text, (int)strlen(text));
 }
+
+

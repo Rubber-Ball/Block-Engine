@@ -1,6 +1,11 @@
 {
     "files.associations": {
         ".fantomasignore": "ignore",
-        "xlib.h": "c"
+        "xlib.h": "c",
+        "key_inputs.h": "c",
+        "stdlib.h": "c",
+        "string.h": "c",
+        "window.h": "c",
+        "stdio.h": "c"
     }
 }
