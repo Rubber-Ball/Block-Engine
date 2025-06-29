@@ -6,7 +6,7 @@
 
 
 int window(int x, int y, int width, int height, int border_width, long border_color, long background_color, char *title, Display **out_display, Window *out_window){
-    printf("\033[1;33mLaunching window.c \033[1;32mdone...\033[0m\n");
+    printf("\033[1;33mLaunching window.c🪟 \033[1;32\nmdone...\033[0m\n");
 
     
 //type-like (int,char,etc...) window is a variable
@@ -16,17 +16,17 @@ int window(int x, int y, int width, int height, int border_width, long border_co
 //type-like (int,char,etc...) window is a variable
 //     |      |----------------------/
     Display *display;
-    printf("\033[1;33mcreating variable display \033[1;32mdone...\033[0m\n");
+    printf("\033[1;33mcreating display variable🗃️ \033[1;32mdone...\033[0m\n");
 
 
 //type-like (int,char,etc...) window is a variable
 //     |     |----------------------/
     Window window; //the window
-    printf("\033[1;33mcreating variable window \033[1;32mdone...\033[0m\n");
+    printf("\033[1;33mcreating window variable🪟 \033[1;32mdone...\033[0m\n");
 
 
     int screen; //which screen to draw on.
-    printf("\033[1;33mcreating variable screen \033[1;32mdone...\033[0m\n");
+    printf("\033[1;33mcreating screen variable \033[1;32mdone...\033[0m\n");
 
 
 //type-like (int,char,etc...) window is a variable
@@ -84,6 +84,7 @@ int window(int x, int y, int width, int height, int border_width, long border_co
 
 
 void window_destroy(Display *display, Window win, GC gc) {
+    
     if (display && gc) {
         XFreeGC(display, gc);
         printf("\033[1;35mGraphics context freed.\033[0m\n");

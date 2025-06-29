@@ -1,19 +1,25 @@
-#include "view/window.h"
-#include "inputs/key_inputs.h"
-#include "view/text.h"
-#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include <unistd.h>
+#include <X11/Xlib.h>
+#include "view/window.h"
+#include "inputs/key_inputs.h"
+#include "view/text.h"
+#include "view/Rectangle.h"
+#include <GL/gl.h>
+#include <GL/glx.h>
+
+
 
 // Dependencies: libx11-dev (or libX11-devel / libx11) THIS CODE IS FOR LINUX ONLY
 
 
 void render_ui(Display *display, Window win, GC gc) {
 
-    draw_text(display, win, gc, 25, 15, "Welcome to Block Engine!", 0xFFFFFF,10);
+    Draw_Filled_Rectangle(display,win,gc,10,10,30,60,0xFFFFFF);
+
+    draw_text(display, win, gc, 25, 15, "Welcome to Block Engine!", 0xFFFFFF,20);
 
     draw_text(display, win, gc, 25, 45, "Press E to exit, W to change color", 0x000099,20);
 }
@@ -21,7 +27,7 @@ void render_ui(Display *display, Window win, GC gc) {
 
 
 int main() {
-    printf("\033[1;33mLaunching 🧱Block_Engine.c🧱 \033[1;32m\ndone...✅\033[0m\n");
+    printf("\033[1;33mLaunching Block_Engine.c🧱 \033[1;32m\ndone...✅\033[0m\n");
 
 
 

@@ -6,6 +6,9 @@
         "stdlib.h": "c",
         "string.h": "c",
         "window.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "gl.h": "c",
+        "glx.h": "c",
+        "rectangle.h": "c"
     }
 }
