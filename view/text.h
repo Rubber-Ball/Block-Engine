@@ -2,7 +2,10 @@
 #define TEXT_H
 #include <X11/Xlib.h>
 
+extern Display *display;
 
 void draw_text(Display *display, Window window, GC gc, int x, int y, char *text, long color, int size);
+
+int Draw_Text_With_Background_Color(Display *display, Window window, GC gc, int x, int y, char *text, long color, int size, int screen, long background_color, long text_color);
 
 #endif

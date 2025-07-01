@@ -2,7 +2,6 @@
 #define WINDOW_H
 #include <X11/Xlib.h>
 
-
 extern Display *display;
 
 void window_destroy(Display *display, Window win, GC gc);

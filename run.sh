@@ -1,1 +1,1 @@
-gcc Block_Engine.c inputs/key_inputs.c inputs/key_inputs.h view/window.c view/window.h view/text.c view/text.h view/Rectangle.c view/Rectangle.h -o Block-Engine -lX11 -lGL -lGLU -lm && ./Block-Engine
+gcc Block_Engine.c inputs/key_inputs.c inputs/key_inputs.h view/Circle.c view/Circle.h view/window.c view/window.h view/text.c view/text.h view/Rectangle.c view/Rectangle.h -o Block-Engine -lX11 -lGL -lGLU -lm && ./Block-Engine

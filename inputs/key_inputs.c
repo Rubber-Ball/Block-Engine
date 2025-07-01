@@ -1,7 +1,7 @@
 #include <X11/Xlib.h>
-#include <X11/keysym.h>
-#include <stdlib.h>
-#include <stdio.h>
+//#include <X11/keysym.h>
+//#include <stdlib.h>
+//#include <stdio.h>
 
 
 int Key_Inputs(XKeyEvent *xkey, const char *key_str) {
