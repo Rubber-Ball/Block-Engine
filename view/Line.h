@@ -4,6 +4,6 @@
 
 extern Display *display;
 
-int Draw_Line(Display *display, Window *window, GC gc, int start_of_line_x, int start_of_line_y, int end_of_line_x, int end_of_line_y);
+int Draw_Line(Display *display, Window window, GC gc, int width, int start_of_line_x, int start_of_line_y, int end_of_line_x, int end_of_line_y, long color);
 
 #endif

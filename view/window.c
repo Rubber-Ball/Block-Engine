@@ -54,7 +54,7 @@ int window(int x, int y, int width, int height, int border_width, long border_co
 
     screen = DefaultScreen(display); //get screen number for number usualy 0.
     printf("\033[1;33mEstablishing a connection to screen🔌 \n\033[1;32mdone...✅\033[0m\n");
-    
+
 
     window = XCreateSimpleWindow(display, RootWindow(display, screen), x, y, width, height, border_width, border_color, background_color);//creat the window with the window Properties with what we gave.                             
     printf("\033[1;33mCreating window📺 \n\033[1;32mdone...✅\033[0m\n");
