@@ -9,6 +9,7 @@
         "stdio.h": "c",
         "gl.h": "c",
         "glx.h": "c",
-        "rectangle.h": "c"
+        "rectangle.h": "c",
+        "keysym.h": "c"
     }
 }

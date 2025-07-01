@@ -17,11 +17,13 @@
 
 void render_ui(Display *display, Window win, GC gc) {
 
-    Draw_Filled_Rectangle(display,win,gc,10,10,30,60,0xFFFFFF);
+    Draw_Filled_Rectangle(display,win,gc,50,50,500,100,0x000099);
 
-    draw_text(display, win, gc, 25, 15, "Welcome to Block Engine!", 0xFFFFFF,20);
+    Draw_empty_Rectangle(display,win,gc,40,40,520,120,0x000099);
 
-    draw_text(display, win, gc, 25, 45, "Press E to exit, W to change color", 0x000099,20);
+    draw_text(display, win, gc, 70, 80, "Welcome to Block Engine!", 0xFFFFFF,20);
+
+    draw_text(display, win, gc, 70, 100, "Press E to exit, W to change color", 0xFFFFFF,20);
 }
 
 
@@ -36,7 +38,7 @@ int main() {
     GC gc;
 
 
-    unsigned long background_color = 0x99999;
+    unsigned long background_color = 0xDCE3F1;
 
     srand(time(NULL));
 
@@ -49,7 +51,6 @@ int main() {
 
     XEvent event;
 
-    
 
 
 
