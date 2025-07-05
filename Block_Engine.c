@@ -4,7 +4,6 @@
 #include <sys/utsname.h>
 #include <time.h>
 #include <X11/Xlib.h>
-//custom made for fast and clean code.
 #include "debugger/Error.h"
 #include "view/window.h"
 #include "inputs/key_inputs.h"
@@ -13,22 +12,8 @@
 #include "view/Circle.h"
 #include "view/Rectangle.h"
 #include "view/Line.h"
+#include "debugger/detect-os.h"
 // Dependencies: libx11-dev (or libX11-devel / libx11) THIS CODE IS FOR LINUX ONLY
-
-void detect_os() {
-    struct utsname buffer;
-    if (uname(&buffer) == 0){
-        if (strcmp(buffer.sysname,"Linux") == 0){
-            printf("\033[1;36mOS:<------🐧Linux!🐧----->\033[0m\n");
-        }
-        else if (strcmp(buffer.sysname,"Darwin") == 0){
-            printf("\033[1;36mOS:<------🍎MacOS🍎👎----->\033[0m\n");
-        }
-        else{
-            printf("\033[1;31mUnknown OS\033[0m");
-        }
-    }
-}
 
 
 
@@ -64,9 +49,6 @@ void render_ui(Display *display, Window win, GC gc, int screen) {
 
 int main() {
     printf("\033[1;33mLaunching Block_Engine.c🧱 \033[1;32m\ndone...✅\033[0m\n");
-
-
-
 
     detect_os();
 
@@ -106,7 +88,6 @@ int main() {
             if (Key_Inputs(&event.xkey, "e")) {
                 printf("\033[1;35mDestroying:\033[0m \033[1;32mdisplay=%p win=%lu gc=%p\033[0m✅\n", display, win, gc);
                 window_destroy(display, win, gc);
-                //system("c");
                 break;
             }
             else if (Key_Inputs(&event.xkey, "w")) {

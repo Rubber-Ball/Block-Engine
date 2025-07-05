@@ -1,0 +1,19 @@
+Block_Engine
+│
+├── Block_Engine.c
+├── run.sh
+├── structure.txt
+├── Brick.png
+├── How it works.odt
+├── view/
+│   ├── window.c/h
+│   ├── Rectangle.c/h
+│   ├── Arc.c/h
+│   ├── Circle.c/h
+│   ├── Line.c/h
+│   ├── text.c/h
+│
+├── debugger/
+│   ├── Error.c/h
+│
+├── inputs
