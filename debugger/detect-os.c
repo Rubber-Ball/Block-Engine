@@ -3,8 +3,7 @@
 #include <string.h>
 
 
-/// @brief 
-/// @file detect-os.c
+
 void detect_os() {
 
         struct utsname buffer;
