@@ -10,6 +10,9 @@
         "gl.h": "c",
         "glx.h": "c",
         "rectangle.h": "c",
-        "keysym.h": "c"
+        "keysym.h": "c",
+        "text.h": "c",
+        "circle.h": "c",
+        "error.h": "c"
     }
 }

@@ -2,7 +2,7 @@
 //#include <X11/keysym.h>
 //#include <stdlib.h>
 #include <stdio.h>
-
+#include "../debugger/Error.h"
 
 
 int window(int x, int y, int width, int height, int border_width, long border_color, long background_color, char *title, Display **out_display, Window *out_window){
@@ -47,14 +47,14 @@ int window(int x, int y, int width, int height, int border_width, long border_co
 
 
     if (display == NULL) {
-        fprintf(stderr, "\033[1;31mCannot open display❌\033[0m\n");
+        error("Cannot open display❌");
         return 1;
     }
 
 
     screen = DefaultScreen(display); //get screen number for number usualy 0.
     printf("\033[1;33mEstablishing a connection to screen🔌 \n\033[1;32mdone...✅\033[0m\n");
-
+\
 
     window = XCreateSimpleWindow(display, RootWindow(display, screen), x, y, width, height, border_width, border_color, background_color);//creat the window with the window Properties with what we gave.                             
     printf("\033[1;33mCreating window📺 \n\033[1;32mdone...✅\033[0m\n");

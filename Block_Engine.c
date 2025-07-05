@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include <string.h>
+#include <string.h>
+#include <sys/utsname.h>
 #include <time.h>
 #include <X11/Xlib.h>
-#define STB_IMAGE_IMPLEMENTATION
-#include "outside_scripts/stb_image.h"
 //custom made for fast and clean code.
+#include "debugger/Error.h"
 #include "view/window.h"
 #include "inputs/key_inputs.h"
 #include "view/text.h"
@@ -15,6 +15,20 @@
 #include "view/Line.h"
 // Dependencies: libx11-dev (or libX11-devel / libx11) THIS CODE IS FOR LINUX ONLY
 
+void detect_os() {
+    struct utsname buffer;
+    if (uname(&buffer) == 0){
+        if (strcmp(buffer.sysname,"Linux") == 0){
+            printf("\033[1;36mOS:<------🐧Linux!🐧----->\033[0m\n");
+        }
+        else if (strcmp(buffer.sysname,"Darwin") == 0){
+            printf("\033[1;36mOS:<------🍎MacOS🍎👎----->\033[0m\n");
+        }
+        else{
+            printf("\033[1;31mUnknown OS\033[0m");
+        }
+    }
+}
 
 
 
@@ -26,7 +40,7 @@ void render_ui(Display *display, Window win, GC gc, int screen) {
 
     draw_text(display, win, gc, 70, 80, "Welcome to Block Engine!", 0xFFFFFF,20);
 
-    draw_text(display, win, gc, 70, 100, "Press E to exit, W to change color", 0xFFFFFF,20);
+    draw_text(display, win, gc, 70, 100, "Press E to exit, W to change background color", 0xFFFFFF,20);
 
     Draw_Filled_Circle(display, win, gc, 450, 80, 50, 50, 0xFFF300);
 
@@ -51,17 +65,23 @@ void render_ui(Display *display, Window win, GC gc, int screen) {
 int main() {
     printf("\033[1;33mLaunching Block_Engine.c🧱 \033[1;32m\ndone...✅\033[0m\n");
 
+
+
+
+    detect_os();
+
     Display *display;
     Window win;
     GC gc;
     
 
     unsigned long background_color = 0xDCE3F1;
-
+    
     srand(time(NULL));
     
     // Create the window and get display + window handles
     if (window(500, 500, 700, 400, 0, 0xFF0000, background_color, "Block Engine", &display, &win) != 0) {
+        error("The Window Creation Failed!❌");
         return 1;
     }
 
