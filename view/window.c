@@ -27,7 +27,7 @@ int window(int x, int y, int width, int height, int border_width, long border_co
     Display *display;
     printf("\033[1;33mcreating display variable💾 \n\033[1;32mdone...✅\033[0m\n");
  
-
+ 
 //type-like (int,char,etc...) window is a variable
 //     |     |----------------------/
     Window window; //the window
