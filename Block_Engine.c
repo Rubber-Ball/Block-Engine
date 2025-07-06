@@ -1,9 +1,21 @@
+/*
+ * This file is part of Block Engine
+ * Copyright (c) 2025 Daniel / Rubber-Ball
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file,
+ * You can obtain one at https://mozilla.org/MPL/2.0/
+ */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/utsname.h>
 #include <time.h>
 #include <X11/Xlib.h>
+//made by Author: Daniel
+//github:
 #include "debugger/Error.h"
 #include "view/window.h"
 #include "inputs/key_inputs.h"
@@ -41,10 +53,7 @@ void render_ui(Display *display, Window win, GC gc, int screen) {
 
     XDrawPoint(display,win,gc,750,750);
 
-
-
 }
-
 
 
 int main() {

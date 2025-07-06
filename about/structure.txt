@@ -1,19 +1,31 @@
-Block_Engine
-│
+Block_Engine/
 ├── Block_Engine.c
 ├── run.sh
-├── structure.txt
-├── Brick.png
-├── How it works.odt
-├── view/
-│   ├── window.c/h
-│   ├── Rectangle.c/h
-│   ├── Arc.c/h
-│   ├── Circle.c/h
-│   ├── Line.c/h
-│   ├── text.c/h
-│
+├── about/
+│   ├── How it works.odt
+│   ├── README.md
+│   └── structure.txt
 ├── debugger/
-│   ├── Error.c/h
-│
-├── inputs
+│   ├── detect-os.c
+│   ├── detect-os.h
+│   ├── Error.c
+│   └── Error.h
+├── images/
+│   ├── Brick.png
+│   └── Brick.svg
+├── inputs/
+│   ├── key_inputs.c
+│   └── key_inputs.h
+├── view/
+│   ├── Ark.c
+│   ├── Ark.h
+│   ├── Circle.c
+│   ├── Circle.h
+│   ├── Line.c
+│   ├── Line.h
+│   ├── Rectangle.c
+│   ├── Rectangle.h
+│   ├── text.c
+│   ├── text.h
+│   ├── window.c
+│   └── window.h

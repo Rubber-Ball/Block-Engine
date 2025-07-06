@@ -3,8 +3,13 @@
 #include <string.h>
 
 
-
+/**
+ * @brief Detects and prints the current operating system.
+ *
+ * Prints a colored message indicating Linux, MacOS, or unknown OS.
+ */
 void detect_os() {
+    
 
         struct utsname buffer;
     if (uname(&buffer) == 0){

@@ -1,0 +1,35 @@
+Mozilla Public License Version 2.0
+==================================
+
+1. You can use this engine to make and sell games, both commercial and free.
+
+2. You do NOT need to credit the author unless you modify and redistribute the engine itself.
+
+3. If you modify and redistribute the engine (e.g., upload it, publish it), you MUST:
+   - Keep this license file
+   - Add the github link (https://github.com/Rubber-Ball/Block-Engine)
+   - Keep the original author’s name in the modified source files
+   - Publish any modified engine source files
+
+For the full license text, see: https://mozilla.org/MPL/2.0/
+
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+Author: Daniel or Rubber-Ball
+
+## 📜 License Summary (MPL 2.0)
+
+Block Engine is licensed under the Mozilla Public License 2.0.
+
+You are free to:
+- Use it in games (free or commercial)
+- Modify it for personal or private use
+- Distribute games made with it **without open-sourcing your game code**
+
+If you **modify the engine** and **shared or published the modified engine**, you must:
+- Add the github link (https://github.com/Rubber-Ball/Block-Engine) to the modified source files you changed
+- Keep the license and author notice at the top of those files
+- If you **don’t share it**, you don’t have to publish anything.
+
+
