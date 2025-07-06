@@ -37,7 +37,7 @@ int window(int x, int y, int width, int height, int border_width, long border_co
     int screen; //which screen to draw on.
     printf("\033[1;33mcreating screen variable💾 \n\033[1;32mdone...✅\033[0m\n");
 
-
+    
 //type-like (int,char,etc...) window is a variable
 //     |     |----------------------/
     XEvent event;
