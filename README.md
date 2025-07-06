@@ -79,7 +79,7 @@ Block_Engine/
 ```
 
 ## Credits
-- Developed by le007 = LeCatMan = daniel
+- Developed by Rubber-Ball = LeCatMan = daniel
 - Powered by X11 and C
 
 ---
