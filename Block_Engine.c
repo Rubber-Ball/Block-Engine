@@ -6,7 +6,8 @@
  * If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/
  */
-
+//made by Author: Daniel / Rubber-Ball
+//github:https://github.com/Rubber-Ball/Block-Engine
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,8 +15,7 @@
 #include <sys/utsname.h>
 #include <time.h>
 #include <X11/Xlib.h>
-//made by Author: Daniel
-//github:
+
 #include "debugger/Error.h"
 #include "view/window.h"
 #include "inputs/key_inputs.h"
