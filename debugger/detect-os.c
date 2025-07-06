@@ -18,20 +18,17 @@
  * Prints a colored message indicating Linux, MacOS, or unknown OS.
  */
 void detect_os() {
-    
+#include <stdio.h>
 
-        struct utsname buffer;
-    if (uname(&buffer) == 0){
-        if (strcmp(buffer.sysname,"Linux") == 0){
-            printf("\033[1;36mOS:<------🐧Linux!🐧----->\033[0m\n");
-        }
-        else if (strcmp(buffer.sysname,"Darwin") == 0){
-            printf("\033[1;36mOS:<------🍎MacOS🍎👎----->\033[0m\n");
-        }
-        else{
-            printf("\033[1;31mUnknown OS\033[0m");
-        }
-    }
+#if defined(_WIN32)
+    printf("\033[1;36mDetected OS: 🪟 Windows\033[0m\n");
+#elif defined(__APPLE__) && defined(__MACH__)
+    printf("\033[1;36mDetected OS: 🍎 macOS\033[0m\n");
+#elif defined(__linux__)
+    printf("\033[1;36mDetected OS: 🐧 Linux\033[0m\n");
+#else
+    printf("\033[1;31mDetected OS: ❓ Unknown\033[0m\n");
+#endif
 }
 
 
