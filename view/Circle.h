@@ -9,7 +9,6 @@
  * You can obtain one at https://mozilla.org/MPL/2.0/
  */
 
-
 #ifndef CIRCLE_H
 #define CIRCLE_H
 #include <X11/Xlib.h>

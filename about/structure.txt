@@ -2,20 +2,25 @@ Block_Engine/
 ├── Block_Engine.c
 ├── run.sh
 ├── about/
-│   ├── How it works.odt
+│   ├── LICENSE
 │   ├── README.md
 │   └── structure.txt
+│
 ├── debugger/
-│   ├── detect-os.c
-│   ├── detect-os.h
+│   ├── Detect-OS.c
+│   ├── Detect-OS.h
 │   ├── Error.c
 │   └── Error.h
+│
 ├── images/
-│   ├── Brick.png
-│   └── Brick.svg
+│   └── Brick.png
+│
 ├── inputs/
-│   ├── key_inputs.c
-│   └── key_inputs.h
+│   ├── Key_inputs.c
+│   ├── Key_inputs.h
+│   ├──Mouse.c
+│   └──Mouse.h
+│
 ├── view/
 │   ├── Ark.c
 │   ├── Ark.h
@@ -25,7 +30,7 @@ Block_Engine/
 │   ├── Line.h
 │   ├── Rectangle.c
 │   ├── Rectangle.h
-│   ├── text.c
-│   ├── text.h
-│   ├── window.c
-│   └── window.h
+│   ├── Text.c
+│   ├── Text.h
+│   ├── Window.c
+│   └── Window.h

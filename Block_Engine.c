@@ -26,6 +26,7 @@
 #include "view/Rectangle.h"
 #include "view/Line.h"
 #include "debugger/Detect-OS.h"
+#include "inputs/Mouse.h"
 // Dependencies: libx11-dev (or libX11-devel / libx11) THIS CODE IS FOR LINUX ONLY
 
 
@@ -96,7 +97,15 @@ int main() {
             render_ui(display, win, gc, screen);
         }
 
-        
+        if (event.type == ButtonPress) {
+            int button = event.xbutton.button;  // 1=left, 2=middle, 3=right
+            int x = event.xbutton.x;
+            int y = event.xbutton.y;
+
+            if (button == 1 && is_mouse_inside_button(x,y,50,50,500,100)) {
+                printf("Button clicked!\n");
+            }
+        }
 
         if (event.type == KeyPress) {
             if (Key_Inputs(&event.xkey, "e")) {
@@ -104,14 +113,14 @@ int main() {
                 window_destroy(display, win, gc);
                 break;
             }
-            else if (Key_Inputs(&event.xkey, "w")) {
+            else if (Key_Inputs(&event.xkey, "B")) {
                 background_color = rand() % 0xFFFFFF; // change to random color
                 XSetWindowBackground(display, win, background_color);
                 XClearWindow(display, win); // force redraw with new background
                 render_ui(display, win, gc, screen);
             }
-
-        }
+ 
+}
         
 
 
