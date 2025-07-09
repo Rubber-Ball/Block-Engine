@@ -63,5 +63,12 @@
             "italic": false
         }
     ],
-    "better-comments.highlightPlainText": true
+    "better-comments.highlightPlainText": true,
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/le007/Block-Engine",
+            "binaryPath": "/home/le007/Block-Engine/Block-Engine",
+            "binaryArgs": []
+        }
+    ]
 }

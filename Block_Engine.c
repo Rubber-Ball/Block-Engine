@@ -1,13 +1,14 @@
 /*
  * This file is part of Block Engine
  * Copyright (c) 2025 Daniel / Rubber-Ball
+ * Made by Author: Daniel / Rubber-Ball
+ * github:  https://github.com/Rubber-Ball/Block-Engine
  *
  * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
  * If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/
  */
-//made by Author: Daniel / Rubber-Ball
-//github:https://github.com/Rubber-Ball/Block-Engine
+
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -17,14 +18,14 @@
 #include <X11/Xlib.h>
 
 #include "debugger/Error.h"
-#include "view/window.h"
-#include "inputs/key_inputs.h"
-#include "view/text.h"
+#include "view/Window.h"
+#include "inputs/Key_inputs.h"
+#include "view/Text.h"
 #include "view/Ark.h"
 #include "view/Circle.h"
 #include "view/Rectangle.h"
 #include "view/Line.h"
-#include "debugger/detect-os.h"
+#include "debugger/Detect-OS.h"
 // Dependencies: libx11-dev (or libX11-devel / libx11) THIS CODE IS FOR LINUX ONLY
 
 
@@ -52,6 +53,8 @@ void render_ui(Display *display, Window win, GC gc, int screen) {
     XSetForeground(display,gc,0xFF0000);
 
     XDrawPoint(display,win,gc,750,750);
+
+    
 
 }
 
@@ -82,6 +85,8 @@ int main() {
 
     int screen = DefaultScreen(display);
     
+    int button_x, button_y, button_width, button_height;
+
     while (1) {
         
         

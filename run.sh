@@ -1,1 +1,3 @@
-gcc Block_Engine.c debugger/detect-os.c debugger/Error.c inputs/key_inputs.c view/Line.c view/Circle.c view/window.c view/text.c view/Rectangle.c -o Block-Engine -lX11 -lGL -lGLU -lm && ./Block-Engine
+#!/bin/bash
+
+gcc $(find . -name '*.c' ! -name 'Ark.c') -o Block-Engine -lX11 -lGL -lGLU -lm && ./Block-Engine
