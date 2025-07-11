@@ -17,16 +17,16 @@
 #include <time.h>
 #include <X11/Xlib.h>
 
-#include "debugger/Error.h"
-#include "view/Window.h"
-#include "inputs/Key_inputs.h"
-#include "view/Text.h"
-#include "view/Ark.h"
-#include "view/Circle.h"
-#include "view/Rectangle.h"
-#include "view/Line.h"
-#include "debugger/Detect-OS.h"
-#include "inputs/Mouse.h"
+#include "Debugger/Error.h"
+#include "View/Window.h"
+#include "Inputs/Key_inputs.h"
+#include "View/Text.h"
+#include "View/Ark.h"
+#include "View/Circle.h"
+#include "View/Rectangle.h"
+#include "View/Line/Line.h"
+#include "Debugger/Detect-OS.h"
+#include "Inputs/Mouse/Mouse.h"
 // Dependencies: libx11-dev (or libX11-devel / libx11) THIS CODE IS FOR LINUX ONLY
 
 

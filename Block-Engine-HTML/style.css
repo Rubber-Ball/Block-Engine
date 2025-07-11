@@ -1,1 +1,57 @@
+body {
+  margin: 0;
+}
+
+
+
+.Block-Engine {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  color: black;
+  font-size: 1cm;
+  white-space: nowrap;
+  background-image: url("Images/Temporary.webp");
+  background-size: 64px;
+}
+
+
+
+.font{
+  position:absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  position: absolute;
+  font-family: sans-serif;
+  color: black;
+  font-size: 1cm;
+  white-space: nowrap;
+  background-image: url("Images/Temporary.webp");
+  background-size: 64px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+ 
+::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 20px;
+}
+
+
+
+@-moz-document url-prefix() {
+  html {
+    width: 10em;
+    scrollbar-width: 10px;
+    scrollbar-color: green rgba(0, 0, 0, 0);
+  }
+}
 
