@@ -1,0 +1,65 @@
+.
+├── Block-Engine-HTML
+│   ├── Files
+│   │   └── Block-Engine-Linux.zip
+│   ├── Fonts
+│   │   ├── AgaveNerdFontMono-Bold.ttf
+│   │   └── AgaveNerdFontMono-Regular.ttf
+│   ├── Images
+│   │   ├── Brick.png
+│   │   ├── Brick.webp
+│   │   ├── Temporary.jpg
+│   │   ├── Temporary.png
+│   │   └── Temporary.webp
+│   ├── index.html
+│   ├── index.js
+│   ├── index.php
+│   └── style.css
+├── Block-Engine-Linux
+│   ├── Block-Engine
+│   ├── Block_Engine.c
+│   ├── Debugger
+│   │   ├── Detect-OS.c
+│   │   ├── Detect-OS.h
+│   │   ├── Error.c
+│   │   └── Error.h
+│   ├── Images
+│   │   ├── Brick.jpg
+│   │   ├── Brick.png
+│   │   ├── Temporary.jpg
+│   │   ├── Temporary.png
+│   │   └── Temporary.webp
+│   ├── Inputs
+│   │   ├── KeyBoard
+│   │   │   ├── Key_inputs.c
+│   │   │   └── Key_inputs.h
+│   │   └── Mouse
+│   │       ├── Mouse.c
+│   │       └── Mouse.h
+│   ├── LICENSE
+│   ├── README
+│   ├── run.sh
+│   └── View
+│       ├── Ark
+│       │   ├── Ark.c
+│       │   └── Ark.h
+│       ├── Circle
+│       │   ├── Circle.c
+│       │   └── Circle.h
+│       ├── Line
+│       │   ├── Line.c
+│       │   └── Line.h
+│       ├── Rectangle
+│       │   ├── Rectangle.c
+│       │   └── Rectangle.h
+│       ├── Text
+│       │   ├── Text.c
+│       │   └── Text.h
+│       └── Window
+│           ├── Window.c
+│           └── Window.h
+├── Block-Engine-MacOS
+├── Block-Engine-Windows
+└── structure.txt
+
+20 directories, 43 files
