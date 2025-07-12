@@ -2,37 +2,44 @@ body {
   margin: 0;
 }
 
+.background {
+  background-image: linear-gradient(to bottom, rgb(199, 36, 36), rgb(199, 36, 36), rgb(199, 36, 36), rgb(199, 36, 36), rgb(0, 0, 0));
+  background-repeat: repeat-x; /* Repeat vertically */
+  background-size: 100% 2000px;  /* Height of each gradient segment */
+}
 
 
 .Block-Engine {
+  font-size: 40px;
+  font-family: "agave";
   position: absolute;
-  top: 100px;
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: sans-serif;
   color: black;
-  font-size: 1cm;
   white-space: nowrap;
-  background-image: url("Images/Temporary.webp");
   background-size: 64px;
 }
 
 
 
 .font{
-  position:absolute;
-  left: 50%;
-  top: 200px;
+  font-family: "agave-bold";
+  font-size: 40px;
   transform: translateX(-50%);
-  position: absolute;
-  font-family: sans-serif;
   color: black;
-  font-size: 1cm;
-  white-space: nowrap;
-  background-image: url("Images/Temporary.webp");
   background-size: 64px;
 }
 
+
+.p{
+  font-family: "agave";
+  font-size: 40px;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  color: black;
+  background-size: 64px;
+}
 
 
 ::-webkit-scrollbar {
@@ -45,6 +52,11 @@ body {
   border-radius: 20px;
 }
 
+@font-face {
+    font-family: 'agave';src: url('Fonts/AgaveNerdFontMono-Regular.ttf') format('truetype');
+
+    font-family: 'agave-bold';src: url('Fonts/AgaveNerdFontMono-Bold.ttf') format('truetype');
+}
 
 
 @-moz-document url-prefix() {

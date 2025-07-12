@@ -18,12 +18,12 @@
 #include <X11/Xlib.h>
 
 #include "Debugger/Error.h"
-#include "View/Window.h"
-#include "Inputs/Key_inputs.h"
-#include "View/Text.h"
-#include "View/Ark.h"
-#include "View/Circle.h"
-#include "View/Rectangle.h"
+#include "View/Window/Window.h"
+#include "Inputs/KeyBoard/Key_inputs.h"
+#include "View/Text/Text.h"
+#include "View/Ark/Ark.h"
+#include "View/Circle/Circle.h"
+#include "View/Rectangle/Rectangle.h"
 #include "View/Line/Line.h"
 #include "Debugger/Detect-OS.h"
 #include "Inputs/Mouse/Mouse.h"

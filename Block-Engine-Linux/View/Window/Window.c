@@ -14,7 +14,10 @@
 //#include <X11/keysym.h>
 //#include <stdlib.h>
 #include <stdio.h>
-#include "../debugger/Error.h"
+#include "../../Debugger/Error.h"
+
+
+
 
 
 int window(int x, int y, int width, int height, int border_width, long border_color, long background_color, char *title, Display **out_display, Window *out_window){
