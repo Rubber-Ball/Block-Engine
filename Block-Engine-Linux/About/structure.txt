@@ -1,9 +1,13 @@
 Block_Engine/
 ├── Block_Engine.c
+│
 ├── run.sh
+│
+├── LICENSE
+│
+├── README.md
+│
 ├── about/
-│   ├── LICENSE
-│   ├── README.md
 │   └── structure.txt
 │
 ├── debugger/
