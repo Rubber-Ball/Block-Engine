@@ -41,7 +41,7 @@ See `LICENSE.txt` for full details.
 ## ⬅️ Credits
 
 - Developed by **Rubber-Ball / Daniel**
-- Powered by **C** **+** **OpenGL**
+- Powered by **C + OpenGL**
 
 ---
 
