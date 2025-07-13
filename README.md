@@ -15,7 +15,7 @@ Block Engine is a lightweight, modular game engine written in C.
 
 ## 🧠 Philosophy
 
-Inspired by classic engines like Quake and Source, Block Engine gives you full control, minimal abstraction, and zero bloat.
+Inspired by classic engines like Quake and Source.
 
 ---
 
