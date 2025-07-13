@@ -37,7 +37,7 @@
       Were / How did i learn ?
     </h1>
 
-    <p style="position: absolute;top: 500px;left: 50%;" class="p">
+    <p style="position: absolute;top: 500px;left: 51.5%;" class="p">
       i watched bro code he is really good i almost learned every programing language from him !
     </p>
   <!--\\\\\\\\\\\\\\\\\\\\\\\\\ Why C ? /////////////////////// -->
@@ -45,7 +45,7 @@
       Why C ?
     </h1>
 
-    <p style="position: absolute;top: 850px;left: 50%;" class="p">
+    <p style="position: absolute;top: 850px;left: 52%;" class="p">
       because it's fun not like C++ and it's simple when you learn not just copy and paste !
     </p>
 
@@ -53,15 +53,15 @@
       What programing languages do i know ?
     </h1>
 
-    <p style="position: absolute;top: 1200px;left: 50%;" class="p">
-      HTML5 | CSS | OpenGL | GDScript | C | Some Python 
+    <p style="position: absolute;top: 1200px;left: 52%;" class="p">
+      HTML5 | CSS | OpenGL | GDScript | C | Python basics 
     </p>
 
     <h1 style="position: absolute;top: 1400px;left: 52%;width: 800px;" class="font">
       The best time to learn programing was 10y ago the second best time is Now !
     </h1>
 
-    <p style="position: absolute;top: 1500px;left: 50%;" class="p">
+    <p style="position: absolute;top: 1500px;left: 53%;" class="p">
       so i started on the age of 10y on my phone ! you're mind is the limit !.
     </p>
 
@@ -73,3 +73,4 @@
   </body>
 
 </html>
+
